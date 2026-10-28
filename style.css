@@ -1,0 +1,153 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    color: #333;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(135deg, #1565c0, #42a5f5);
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.tarjeta {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    text-align: center;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.tarjeta h2 {
+    color: #1565c0;
+    margin-bottom: 15px;
+}
+
+.tarjeta p {
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+.icono {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+button, .boton-mapa {
+    display: inline-block;
+    background: #1976d2;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    padding: 14px 20px;
+    margin-top: 15px;
+
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+
+    transition: background 0.3s;
+}
+
+button:hover, .boton-mapa:hover {
+    background: #0d47a1;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+.datos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.dato {
+    background: #e3f2fd;
+    padding: 15px 8px;
+    border-radius: 10px;
+    min-width: 0;
+}
+
+.dato h3 {
+    font-size: 16px;
+    color: #1565c0;
+}
+
+.dato p {
+    font-size: 16px;
+    overflow-wrap: anywhere;
+}
+
+.oculto {
+    display: none;
+}
+
+#estado {
+    font-weight: bold;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Diseño adaptable para celulares */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    .contenedor {
+        grid-template-columns: 1fr;
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .tarjeta {
+        padding: 25px 15px;
+    }
+
+    button, .boton-mapa {
+        width: 100%;
+    }
+
+    .dato p {
+        font-size: 14px;
+    }
+}

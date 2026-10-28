@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Ubicación GPS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>📍 Mi Ubicación GPS</h1>
+        <p>Aplicación web de geolocalización</p>
+    </header>
+
+    <main class="contenedor">
+
+        <section class="tarjeta">
+            <div class="icono">🌎</div>
+
+            <h2>Encuentra tu ubicación</h2>
+
+            <p>
+                Presiona el botón para conocer
+                tu ubicación geográfica actual.
+            </p>
+
+            <button id="btnUbicacion">
+                📍 Obtener mi ubicación
+            </button>
+
+            <p id="estado" role="status" aria-live="polite">
+                Esperando solicitud...
+            </p>
+        </section>
+
+        <section class="tarjeta">
+            <h2>📊 Coordenadas GPS</h2>
+
+            <div class="datos">
+                <div class="dato">
+                    <h3>Latitud</h3>
+                    <p id="latitud">--</p>
+                </div>
+
+                <div class="dato">
+                    <h3>Longitud</h3>
+                    <p id="longitud">--</p>
+                </div>
+            </div>
+
+            <p>
+                Precisión:
+                <span id="precision">--</span>
+            </p>
+
+            <a id="btnMapa"
+               href="#"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="boton-mapa oculto">
+                🗺️ Ver en Google Maps
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Programación Móvil Plataforma
+        </p>
+        <p>
+            Proyecto de Geolocalización con JavaScript
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
